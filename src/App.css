@@ -9,7 +9,8 @@ body {
 }
 
 img {
-  width: 800px;
+  max-width: 50%;
+  height: auto;
 }
 
 /* Header Container */
@@ -67,4 +68,20 @@ img {
 
 .body img {
   width: 800px;
+}
+
+.contact-info {
+  background-color: #a6a7aa;
+  width: 25%;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.mission {
+  width: 30%;
+  margin: auto;
+  font-size: 1.25rem;
 }

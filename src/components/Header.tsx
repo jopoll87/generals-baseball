@@ -1,11 +1,13 @@
+import GeneralsMascot from '../assets/GeneralsMascot.png'
+import Generals from '../assets/TShirtVariation.png'
 
 const Header = () => {
 
   return (
     <header className='header'>
       <a href='/' className='logo'>
-        <img className='logo-img' src='/GeneralsMascot.png' />
-        <img className='logo-text' src='/TShirtVariation.png' />
+        <img className='logo-img' src={GeneralsMascot} />
+        <img className='logo-text' src={Generals} />
       </a>
       <div className='nav'>
         <a href=''>About</a>
