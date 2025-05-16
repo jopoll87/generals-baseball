@@ -9,7 +9,7 @@ const Contact = () => {
           <h3>Email:</h3>
           <p>utahgeneralsbaseball@gmail.com</p>
           <h3>Phone #:</h3>
-          <p>801-710-1654</p>
+          <p>(801) 686-8511</p>
         </div>
       </div>
     </>

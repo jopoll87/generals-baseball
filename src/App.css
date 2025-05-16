@@ -1,5 +1,5 @@
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -19,18 +19,17 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  background-color: #CEB36E;
+  background-color: #ceb36e;
   box-shadow: 0 2px 4px rgba(206, 179, 110, 0.4);
   position: relative;
   border-radius: 5px;
 }
 
-
 /* Logo */
 
 .logo-img {
   width: 60px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 .logo-text {
@@ -52,7 +51,7 @@ img {
 
 .nav a:hover {
   color: #636c53;
-  transition: color 0.3
+  transition: color 0.3;
 }
 
 .body {
@@ -67,7 +66,7 @@ img {
 }
 
 .body img {
-  width: 800px;
+  width: 700px;
 }
 
 .contact-info {
@@ -84,4 +83,47 @@ img {
   width: 30%;
   margin: auto;
   font-size: 1.25rem;
+}
+
+#coaches {
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+#coaches ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#coaches li {
+  width: 20rem;
+  text-align: center;
+}
+
+#coaches li img {
+  border-radius: 6px;
+  height: 14rem;
+  object-fit: cover;
+}
+
+#coaches li h3 {
+  margin: 0.5rem 0;
+}
+
+#coaches li p {
+  font-size: 0.9rem;
+}
+
+#link {
+  text-decoration: none;
+  color: black;
+}
+
+#link:hover {
+  color: #ceb36e;
 }

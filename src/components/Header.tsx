@@ -1,19 +1,20 @@
-import GeneralsMascot from '../assets/GeneralsMascot.png'
-import Generals from '../assets/TShirtVariation.png'
+import { Link } from 'react-router-dom';
+import GeneralsMascot from '../assets/Logos/GeneralsMascot.png'
+import Generals from '../assets/Logos/TShirtVariation.png'
 
 const Header = () => {
 
   return (
     <header className='header'>
-      <a href='/' className='logo'>
+      <Link to='/' className='logo'>
         <img className='logo-img' src={GeneralsMascot} />
         <img className='logo-text' src={Generals} />
-      </a>
+      </Link>
       <div className='nav'>
-        <a href=''>About</a>
-        <a href=''>Sponsors</a>
-        <a>Forms</a>
-        <a href="">Contact</a>
+        <Link to='/about'>About</Link>
+        <Link to='/sponsors'>Sponsors</Link>
+        <Link to='/forms'>Forms</Link>
+        <Link to='/contact'>Contact</Link>
       </div>
       
     </header>

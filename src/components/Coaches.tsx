@@ -1,13 +1,24 @@
-import { COACHES } from '../data/coaches.js'
+import { CoachType, COACHES } from '../data/CoachesData.tsx';
+import Coach from './Coach.tsx';
+import Section from './Section.tsx';
 
 const Coaches = () => {
   return (
-    <div>
-        {COACHES.map(coach => (
-            <h3>{coach.name}</h3>
+    <Section title='Coaches' id='coaches'>
+      <ul>
+        {COACHES.map((coach: CoachType) => (
+          <Coach
+            key={coach.id}
+            id={coach.id}
+            name={coach.name}
+            title={coach.title}
+            image={coach.image}
+            bio={coach.bio}
+          />
         ))}
-    </div>
-  )
-}
+      </ul>
+    </Section>
+  );
+};
 
-export default Coaches
+export default Coaches;
