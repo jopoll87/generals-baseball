@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import StarsShield from '../assets/Logos/Generalsw_Shield&Stars.png';
+import StarsShield from '../assets/Logos/GeneralsShieldStars.png';
 import Header from './Header';
 
 const Body = () => {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import GeneralsMascot from '../assets/Logos/GeneralsMascot.png'
-import Generals from '../assets/Logos/TShirtVariation.png'
+import Generals from '../assets/Logos/GeneralsBlack.png'
 
 const Header = () => {
 

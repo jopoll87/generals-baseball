@@ -128,6 +128,27 @@ img {
   color: #ceb36e;
 }
 
+#online-forms, #print-forms {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #a6a7aa;
+  margin: 10px;
+}
+
+.form-button:hover {
+  background-color: #ceb36e;
+}
+
 @media (max-width: 1240px) {
   .contact-info {
     width: 50%;
