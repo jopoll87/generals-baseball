@@ -1,5 +1,5 @@
 import Header from './Header';
-// import Coaches from './Coaches'
+import Coaches from './Coaches'
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
             love of baseball
           </p>
         </div>
-        {/* <Coaches /> */}
+        <Coaches />
       </div>
     </>
   );
