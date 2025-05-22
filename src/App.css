@@ -137,11 +137,13 @@ img {
 
 .form-button {
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.15rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   background-color: #a6a7aa;
+  color: #000;
+  font-weight: bold;
   margin: 10px;
 }
 
