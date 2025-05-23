@@ -58,7 +58,7 @@ img {
 .hamburger-menu {
   display: none; /* Hidden by default */
   background-color: transparent;
-  border: 1px solid #000;
+  border: none;
   padding: 8px 12px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -82,12 +82,23 @@ img {
 
 .contact-info {
   background-color: #a6a7aa;
-  width: 25%;
-  margin: 100px auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
   padding: 20px;
   border-radius: 7px;
   border: none;
   font-size: 1.25rem;
+}
+
+.contact-info h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.contact-info p {
+  font-size: 1.25rem;
+  margin-top: 0;
 }
 
 .mission {
@@ -162,11 +173,6 @@ img {
   background-color: #ceb36e;
 }
 
-@media (max-width: 1240px) {
-  .contact-info {
-    width: 50%;
-  }
-}
 
 /* -------- MOBILE STYLES -------- */
 @media (max-width: 768px) {
@@ -222,6 +228,23 @@ img {
   .contact-info, .mission {
     width: 90%;
     font-size: 1rem;
+  }
+
+  .contact-info {
+    margin: 30px auto;
+  }
+
+  .contact-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-info .form-button {
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 
   #coaches ul {
