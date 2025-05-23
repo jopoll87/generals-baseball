@@ -13,7 +13,7 @@ const Body = () => {
             alt='Generals main logo'
         />
         <h2>Tryouts June 18, 2025</h2>
-        <button onClick={() => window.open(ONLINEFORMSDATA[1].url)} className='form-button'>Register Here</button>
+        <button onClick={() => window.open(ONLINEFORMSDATA[0].url)} className='form-button'>Register Here</button>
         <h3>Looking for boys in Weber & Davis Counties.</h3>
         </div>
     
