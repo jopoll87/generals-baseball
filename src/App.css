@@ -62,7 +62,6 @@ img {
   padding: 8px 12px;
   font-size: 1.5rem;
   cursor: pointer;
-  /* align-self: flex-end; */ /* No longer needed, parent .header-top-row handles alignment */
 }
 
 .body {
@@ -82,23 +81,23 @@ img {
 
 .contact-info {
   background-color: #a6a7aa;
-  width: 90%;
-  max-width: 600px;
-  margin: 50px auto;
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width for larger screens */
+  margin: 50px auto; /* Default margin */
   padding: 20px;
   border-radius: 7px;
   border: none;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Base font size for p tags within contact-info */
 }
 
 .contact-info h4 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5em;
+  font-size: 1.4rem; /* Slightly larger for headings */
+  margin-bottom: 0.5em; /* Add some space below h4 */
 }
 
 .contact-info p {
-  font-size: 1.25rem;
-  margin-top: 0;
+  font-size: 1.25rem; /* Explicitly set p font size, or rely on inheritance */
+  margin-top: 0; /* Remove default top margin from p if h4 provides bottom margin */
 }
 
 .mission {
@@ -107,6 +106,7 @@ img {
   font-size: 1.25rem;
 }
 
+/* === COACHES SECTION STYLES === */
 #coaches {
   padding: 2rem;
   border-radius: 6px;
@@ -117,29 +117,51 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 6rem;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 6rem; /* Default gap for desktop */
 }
 
 #coaches li {
-  width: 20rem;
-  text-align: center;
+  width: 24rem; /* Desktop width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#coaches li img {
+.coach-image-container {
+  width: 100%;
+  position: relative;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
   border-radius: 6px;
-  height: 14rem;
+}
+
+.coach-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  max-width: 100%; /* Add this line */
 }
 
 #coaches li h3 {
-  margin: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em; /* Adjust as needed */
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-#coaches li p {
+#coaches li p { /* For Bio */
   font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
 }
+/* === END COACHES SECTION STYLES === */
 
 #link {
   text-decoration: none;
@@ -172,6 +194,7 @@ img {
 .form-button:hover {
   background-color: #ceb36e;
 }
+
 
 
 /* -------- MOBILE STYLES -------- */
@@ -226,36 +249,42 @@ img {
   }
 
   .contact-info, .mission {
-    width: 90%;
-    font-size: 1rem;
+    width: 90%; /* This is fine, already set by default but good to be explicit if .mission needs it */
+    font-size: 1rem; /* Base font size for p tags within contact-info on mobile */
   }
 
+  /* Specific margin for .contact-info on mobile */
   .contact-info {
     margin: 30px auto;
+    /* font-size: 1rem; already set above */
   }
 
   .contact-info h4 {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Slightly larger h4 on mobile */
   }
 
   .contact-info p {
-    font-size: 1rem;
+    font-size: 1rem; /* p tag font size on mobile */
   }
 
   .contact-info .form-button {
-    font-size: 1rem;
-    padding: 8px 16px;
+    font-size: 1rem; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
   }
 
-  #coaches ul {
-    gap: 2rem;
-  }
+#coaches ul {
+  gap: 2rem; /* Reduced gap for mobile */
+}
 
-  #coaches li {
-    width: 90%;
-  }
+#coaches li {
+  width: 90%; /* Mobile width */
+}
 
-  
+  /* Ensure .coach-image-container is also 100% width on mobile */
+  /* .coach-image-container { */
+    /* width: 100%; /* Already set by default rule */
+  /* } */
+
 
   .logo-text {
     display: none;

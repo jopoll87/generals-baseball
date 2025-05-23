@@ -1,6 +1,6 @@
-import Jon from '../assets/coaches/jon.jpg';
-import Ryan from '../assets/coaches/Ryan.jpeg';
-import Cole from '../assets/coaches/ColePlaceHolder.png';
+import Jon from '../assets/coaches/Jon.jpg';
+import Ryan from '../assets/coaches/Ryan.jpg';
+import Cole from '../assets/coaches/ColePlaceHolder.jpg';
 
 export type CoachType = {
   id: number;
