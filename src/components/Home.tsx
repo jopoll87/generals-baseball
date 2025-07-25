@@ -7,7 +7,7 @@ const Body = () => {
     <>
         <Header />
         <div className='body'>
-        <h1>Starting Fall 2025</h1>
+        <h1>Inaugural Season Fall 2025</h1>
         <img
             src={StarsShield}
             alt='Generals main logo'
