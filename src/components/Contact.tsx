@@ -10,7 +10,7 @@ const Contact = () => {
       <Header />
       <div className='body'>
         <div className='contact-info'>
-          <button onClick={handleClick} className='form-button' style={{backgroundColor: '#ceb36e', }}>
+          <button onClick={handleClick} className='form-button' style={{backgroundColor: '#ceb36e'}}>
             Email us
           </button>
           <h4>Phone #:</h4>
