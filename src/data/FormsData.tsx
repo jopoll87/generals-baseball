@@ -9,21 +9,25 @@ export const ONLINEFORMSDATA = [
     id: 1,
     title: 'Tryout Registration',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSfrdTTl_H3TVhWeGaUMvrsjDBnVrMEUP7EPPdMKNjcDvk6U3w/viewform?usp=sharing&ouid=106267434343500935915',
+    embed: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrdTTl_H3TVhWeGaUMvrsjDBnVrMEUP7EPPdMKNjcDvk6U3w/viewform?embedded=true" width="640" height="1233" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
   },
   {
     id: 2,
     title: 'Release and Waiver',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLScrhP5U-WM2j7Y3APmGB5h3lQM-Zzi84gL5DHDfH25xCaqCPw/viewform?usp=sharing&ouid=106267434343500935915',
+    embed: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrhP5U-WM2j7Y3APmGB5h3lQM-Zzi84gL5DHDfH25xCaqCPw/viewform?embedded=true" width="640" height="2636" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
   },
   {
     id: 3,
     title: 'Player Registration',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSdiaftkCcphZ5lUU7wLNAjjA57tzi8hAITNyjUyxd23Y3SJpw/viewform?usp=sharing&ouid=106267434343500935915',
+    embed: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiaftkCcphZ5lUU7wLNAjjA57tzi8hAITNyjUyxd23Y3SJpw/viewform?embedded=true" width="640" height="2906" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
   },
   {
     id: 4,
     title: 'Code of Conduct',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLScUmNZRisbgTBUB8zi3EPP7DWYzWT7arkTaKpJ3N0gAOO7Wbg/viewform?usp=header',
+    embed: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUmNZRisbgTBUB8zi3EPP7DWYzWT7arkTaKpJ3N0gAOO7Wbg/viewform?embedded=true" width="640" height="987" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
   },
 ];
 
