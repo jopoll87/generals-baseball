@@ -25,7 +25,6 @@ const Header = () => {
       </div>
       <div className={`nav ${isMenuOpen ? 'nav-mobile-open' : ''}`}>
         <Link to='/about'>About</Link>
-        <Link to='/players'>Players</Link>
         <Link to='/sponsors'>Sponsors</Link>
         <Link to='/forms'>Forms</Link>
         <Link to='/contact'>Contact</Link>
