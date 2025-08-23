@@ -256,6 +256,23 @@ body {
 }
 
 
+li {
+  list-style-type: none; /* removes bullet */
+  margin: 10px 0;
+}
+
+.sponsor {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 500px;
+}
+
+
+
 
 /* -------- MOBILE STYLES -------- */
 @media (max-width: 768px) {
@@ -364,5 +381,9 @@ body {
   .card-container {
     justify-content: center;
   }
+
+  .sponsor img {
+  width: 300px;
+}
 
 }

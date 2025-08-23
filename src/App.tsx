@@ -5,7 +5,6 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Sponsors from './components/Sponsors';
 import Forms from './components/Forms';
-import Players from './components/Players';
 
 
 const router = createBrowserRouter([
@@ -14,7 +13,6 @@ const router = createBrowserRouter([
   {path: '/about', element: <About />},
   {path: '/sponsors', element: <Sponsors />},
   {path: '/forms', element: <Forms />},
-  {path: '/players', element: <Players />},
 ])
 
 function App() {

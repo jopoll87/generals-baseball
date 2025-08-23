@@ -17,6 +17,9 @@ const Forms = () => {
             <button key={onlineForm.id} onClick={() => window.open(onlineForm.url)} className='form-button'>
               {onlineForm.title}
             </button>
+            // <button key={onlineForm.id} className='form-button'>
+            //   {onlineForm.title}
+            // </button>
           );
         })}
       </Section>
