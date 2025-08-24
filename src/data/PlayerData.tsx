@@ -22,27 +22,6 @@ export type PlayerType = {
 
 export const PLAYERS =[
   {
-    id: 1,
-    name: 'McCoy',
-    playerNumber: 15,
-    image: McCoy,
-    positions: ['Pitcher', 'Shortstop', 'Second', 'Outfield']
-  },
-  {
-    id: 2,
-    name: 'Evan',
-    playerNumber: 22,
-    image: Evan,
-    positions: ['Pitcher', 'Catcher', 'First', 'Third']
-  },
-  {
-    id: 3,
-    name: 'Easton',
-    playerNumber: 11,
-    image: Easton,
-    positions: ['Catcher', 'Outfield']
-  },
-  {
     id: 4,
     name: 'Bron',
     playerNumber: 99,
@@ -64,11 +43,25 @@ export const PLAYERS =[
     positions: ['Pitcher', 'First', 'Outfield']
   },
   {
+    id: 3,
+    name: 'Easton',
+    playerNumber: 11,
+    image: Easton,
+    positions: ['Catcher', 'Outfield']
+  },
+  {
     id: 7,
     name: 'Ethan',
     playerNumber: 13,
     image: Ethan,
     positions: ['Pitcher', 'Outfield', 'Infield']
+  },
+  {
+    id: 2,
+    name: 'Evan',
+    playerNumber: 22,
+    image: Evan,
+    positions: ['Pitcher', 'Catcher', 'First', 'Third']
   },
   {
     id: 8,
@@ -90,6 +83,13 @@ export const PLAYERS =[
     playerNumber: 14,
     image: Kelton,
     positions: ['Pitcher', 'Second', 'Outfield']
+  },
+  {
+    id: 1,
+    name: 'McCoy',
+    playerNumber: 15,
+    image: McCoy,
+    positions: ['Pitcher', 'Shortstop', 'Second', 'Outfield']
   },
   {
     id: 11,
