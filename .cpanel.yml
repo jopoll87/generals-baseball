@@ -1,10 +1,4 @@
 ---
 deployment:
   tasks:
-    - set -x
-    - export DEPLOYPATH=/home/utahkiar/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -R .[^.]* $DEPLOYPATH
-    - cd /home/utahkiar/public_html/
-    - /usr/bin/npm install
-    - /usr/bin/npm run build
+    - ls -la /home/utahkiar/repositories/generals-baseball
