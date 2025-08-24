@@ -2,20 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/utahkiar/public_html/
-    - echo "--- Starting deployment ---" > $DEPLOYPATH/deploy-log.txt
-    - date >> $DEPLOYPATH/deploy-log.txt
-    - echo "--- Checking environment ---" >> $DEPLOYPATH/deploy-log.txt
-    - whoami >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - pwd >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - echo "--- Checking npm ---" >> $DEPLOYPATH/deploy-log.txt
-    - which npm >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - npm -v >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - echo "--- Copying files ---" >> $DEPLOYPATH/deploy-log.txt
-    - /bin/cp -vR * $DEPLOYPATH >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - /bin/cp -vR .[^.]* $DEPLOYPATH >> $DEPLOYPATH/deploy-log.txt 2>&1 || echo "No hidden files" >> $DEPLOYPATH/deploy-log.txt
-    - echo "--- Changing to public_html ---" >> $DEPLOYPATH/deploy-log.txt
-    - cd $DEPLOYPATH
-    - echo "--- Running npm install ---" >> $DEPLOYPATH/deploy-log.txt
-    - /usr/bin/npm install >> $DEPLOYPATH/deploy-log.txt 2>&1
-    - echo "--- npm install finished ---" >> $DEPLOYPATH/deploy-log.txt
-    - date >> $DEPLOYPATH/deploy-log.txt
+    - /dist/cp -R assets $DEPLOYPATH
+    - /dist/cp index.html $DEPLOYPATH
