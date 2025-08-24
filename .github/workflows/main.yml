@@ -1,0 +1,14 @@
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to cPanel
+        id: deploy
+        uses: pinkasey/cpanel-deploy-action@v1.0.0
+        with:
+          hostname: 'https://www.utahgeneralsbaseball.com'
+          repository_root: '/home/jopoll87/generals-baseball'
+          branch: main
+          cpanel_token: '6XLEZ60KOGO6HU789HMYGNXT07F3MCCZ'
+      - name: echo deploy-duration
+        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
