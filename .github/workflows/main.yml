@@ -6,9 +6,10 @@ deploy:
       uses: pinkasey/cpanel-deploy-action@v1.0.0
       with:
         hostname: 'server355.web-hosting.com' 
-        username: 'jopoll87'
+        username: 'utahkiar'
         cpanel_token: ${{ secrets.CPANEL_TOKEN }}
-        repository_root: '/home/jopoll87/generals-baseball'
+        repository_root: 'jopoll87/generals-baseball'
+        updateRepository: true
         branch: 'main'
 
     - name: echo deploy-duration
