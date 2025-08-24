@@ -7,4 +7,9 @@ deployment:
     - /bin/cp -vR * $DEPLOYPATH
     - echo "--- Copying hidden files ---"
     - /bin/cp -vR .[^.]* $DEPLOYPATH || echo "No hidden files to copy"
-    - echo "--- Done ---"
+    - echo "--- Done copying files ---"
+    - echo "--- Changing directory to public_html ---"
+    - cd $DEPLOYPATH
+    - echo "--- Installing npm dependencies ---"
+    - /usr/bin/npm install
+    - echo "--- Done installing ---"
