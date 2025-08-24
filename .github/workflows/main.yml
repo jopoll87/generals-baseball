@@ -9,19 +9,38 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: build
-      run: npm run build
-    - name: Deploy to cPanel
-      id: deploy
-      uses: pinkasey/cpanel-deploy-action@v1.0.0
-      with:
-        hostname: 'https://server355.web-hosting.com'
-        cpanel_username: 'utahkiar'
-        cpanel_token: ${{ secrets.CPANEL_TOKEN }}
-        repository_root: '/home/utahkiar/repositories/generals-baseball'
-        updateRepository: true
-        branch: 'main'
+      # 1️⃣ Checkout your repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: echo deploy-duration
-      run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
+      # 2️⃣ Setup Node.js (optional if you need npm)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Change to your project’s Node version
+
+      # 3️⃣ Install dependencies (optional)
+      - name: Install dependencies
+        working-directory: ./  # Change this if package.json is in a subfolder
+        run: npm install
+
+      # 4️⃣ Build project (optional)
+      - name: Build project
+        working-directory: ./  # Change this if package.json is in a subfolder
+        run: npm run build
+
+      # 5️⃣ Deploy to cPanel
+      - name: Deploy to cPanel
+        id: deploy
+        uses: pinkasey/cpanel-deploy-action@v1.0.0
+        with:
+          hostname: 'https://server355.web-hosting.com'
+          cpanel_username: 'utahkiar'
+          cpanel_token: ${{ secrets.CPANEL_TOKEN }}
+          repository_root: '/home/utahkiar/repositories/generals-baseball'
+          updateRepository: true
+          branch: 'main'
+
+      - name: echo deploy-duration  
+        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
 
