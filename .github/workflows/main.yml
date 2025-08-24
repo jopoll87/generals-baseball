@@ -1,32 +1,32 @@
-name: Deploy to cPanel
+name: Deploy React Vite site to cPanel
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      # 1️⃣ Checkout your repo
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Setup Node.js (optional if you need npm)
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Change to your project’s Node version
+          node-version: '18'
 
-      # 3️⃣ Install dependencies (optional)
+      # 3️⃣ Install dependencies
       - name: Install dependencies
-        working-directory: ./  # Change this if package.json is in a subfolder
-        run: npm install
+        run: npm ci
 
-      # 4️⃣ Build project (optional)
+      # 4️⃣ Build Vite app
       - name: Build project
-        working-directory: ./  # Change this if package.json is in a subfolder
         run: npm run build
 
       # 5️⃣ Deploy to cPanel
