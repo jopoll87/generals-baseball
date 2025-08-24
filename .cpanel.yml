@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/utahkiar/public_html/
-    - /dist/cp index.html $DEPLOYPATH
+    - /dist/cp -R * $DEPLOYPATH
