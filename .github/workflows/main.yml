@@ -38,9 +38,9 @@ jobs:
           cpanel_username: 'utahkiar'
           cpanel_token: ${{ secrets.CPANEL_TOKEN }}
           repository_root: '/home/utahkiar/repositories/generals-baseball'
-          updateRepository: true
+          #updateRepository: true
           branch: 'main'
 
-      - name: echo deploy-duration  
-        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
+      #- name: echo deploy-duration  
+        #run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
 
