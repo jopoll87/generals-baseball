@@ -9,6 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: build
+      run: npm run build
     - name: Deploy to cPanel
       id: deploy
       uses: pinkasey/cpanel-deploy-action@v1.0.0
