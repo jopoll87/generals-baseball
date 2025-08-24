@@ -36,9 +36,11 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist
+          protocol: ftp
+          port: 21
+          local-dir: dist/
           server-dir: ${{ secrets.FTP_PATH }}
-          method: ftp
+          #method: ftp
 
       # 5️⃣ Deploy to cPanel
       #- name: Deploy to cPanel
