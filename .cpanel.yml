@@ -1,6 +1,9 @@
 ---
 deployment:
   tasks:
+  # Path to your public_html folder
     - export DEPLOYPATH=/home/utahkiar/public_html/
+    # Copy the built assets folder
     - /bin/cp -R dist/assets $DEPLOYPATH
+    # Copy the main index.html
     - /bin/cp dist/index.html $DEPLOYPATH
