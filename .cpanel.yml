@@ -8,8 +8,15 @@ deployment:
     - echo "--- Copying hidden files ---"
     - /bin/cp -vR .[^.]* $DEPLOYPATH || echo "No hidden files to copy"
     - echo "--- Done copying files ---"
+    - echo "--- Checking for npm ---"
+    - which npm
+    - command -v npm
+    - npm -v
     - echo "--- Changing directory to public_html ---"
     - cd $DEPLOYPATH
-    - echo "--- Installing npm dependencies ---"
+    - pwd
+    - echo "--- Listing files in public_html ---"
+    - ls -la
+    - echo "--- Attempting npm install ---"
     - /usr/bin/npm install
-    - echo "--- Done installing ---"
+    - echo "--- Done ---"
