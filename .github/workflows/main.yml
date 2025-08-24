@@ -32,7 +32,7 @@ jobs:
       # 5️⃣ Deploy to cPanel
       - name: Deploy to cPanel
         id: deploy
-        uses: pinkasey/cpanel-deploy-action@v1.0.0
+        uses: pinkasey/cpanel-deploy-action@v1.2.1
         with:
           hostname: 'https://server355.web-hosting.com'
           cpanel_username: 'utahkiar'
