@@ -14,7 +14,7 @@ jobs:
       uses: pinkasey/cpanel-deploy-action@v1.0.0
       with:
         hostname: 'server355.web-hosting.com' 
-        username: 'utahkiar'
+        cpanel_username: 'utahkiar'
         cpanel_token: ${{ secrets.CPANEL_TOKEN }}
         repository_root: 'jopoll87/generals-baseball'
         updateRepository: true
