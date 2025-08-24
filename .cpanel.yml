@@ -1,6 +1,10 @@
 ---
 deployment:
   tasks:
+    - set -exv
     - export DEPLOYPATH=/home/utahkiar/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -R .[^.]* $DEPLOYPATH
+    - echo "--- Copying files ---"
+    - /bin/cp -vR * $DEPLOYPATH
+    - echo "--- Copying hidden files ---"
+    - /bin/cp -vR .[^.]* $DEPLOYPATH || echo "No hidden files to copy"
+    - echo "--- Done ---"
