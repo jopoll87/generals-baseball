@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - ls -la /home/utahkiar/repositories/generals-baseball
+    - export DEPLOYPATH=/home/utahkiar/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .[^.]* $DEPLOYPATH
