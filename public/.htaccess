@@ -1,0 +1,5 @@
+# Instruct Apache to serve JavaScript files with the correct MIME type.
+AddType application/javascript .js
+
+# Also add the correct MIME type for CSS files, just in case.
+AddType text/css .css
