@@ -155,7 +155,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: 100%; /* Add this line */
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #coaches li h3 {
@@ -166,7 +169,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#coaches li p { /* For Bio */
+#coaches li p {
+  /* For Bio */
   font-size: 0.9rem;
   text-align: center;
   width: 100%;
@@ -182,7 +186,8 @@ body {
   color: #ceb36e;
 }
 
-#online-forms, #print-forms {
+#online-forms,
+#print-forms {
   display: flexbox;
   justify-content: center;
   align-items: center;
@@ -205,7 +210,6 @@ body {
   background-color: #ceb36e;
 }
 
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -214,7 +218,6 @@ body {
   padding: 20px;
   list-style: none;
 }
-
 
 .player-card {
   width: 300px;
@@ -255,24 +258,45 @@ body {
   color: #222;
 }
 
-
 li {
   list-style-type: none; /* removes bullet */
   margin: 10px 0;
 }
 
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .sponsor {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
   padding: 10px;
-  text-align: center;
+}
+
+.sponsor-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
 }
 
 .sponsor img {
-  width: 500px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-
-
+.sponsor h2 {
+  margin-top: auto;
+  padding-top: 20px;
+}
 
 /* -------- MOBILE STYLES -------- */
 @media (max-width: 768px) {
@@ -280,6 +304,8 @@ li {
     flex-direction: column;
     align-items: flex-start; /* Or stretch, if children should take full width by default */
     padding: 12px;
+    background-color: #636c53;
+    box-shadow: none;
   }
 
   .header-top-row {
@@ -292,6 +318,7 @@ li {
 
   .hamburger-menu {
     display: block; /* Show on mobile */
+    color: #ceb36e;
     /* No margin-bottom needed here now, spacing handled by .nav's margin-top */
   }
 
@@ -329,7 +356,8 @@ li {
     text-align: left;
   }
 
-  .contact-info, .mission {
+  .contact-info,
+  .mission {
     width: 90%; /* This is fine, already set by default but good to be explicit if .mission needs it */
     font-size: 1rem; /* Base font size for p tags within contact-info on mobile */
   }
@@ -353,37 +381,37 @@ li {
     padding: 8px 16px; /* Adjust button padding */
   }
 
-#coaches ul {
-  gap: 2rem; /* Reduced gap for mobile */
-}
+  #coaches ul {
+    gap: 2rem; /* Reduced gap for mobile */
+  }
 
-#coaches li {
-  width: 90%; /* Mobile width */
-}
+  #coaches li {
+    width: 90%; /* Mobile width */
+  }
 
   /* Ensure .coach-image-container is also 100% width on mobile */
   /* .coach-image-container { */
-    /* width: 100%; /* Already set by default rule */
+  /* width: 100%; /* Already set by default rule */
   /* } */
 
   .logo-text {
     display: none;
   }
-  
-.player-card {
+
+  .player-card {
     max-width: 90vw;
   }
 
   .player-photo {
-    object-fit:contain;
+    object-fit: contain;
   }
 
   .card-container {
     justify-content: center;
   }
 
-  .sponsor img {
-  width: 300px;
-}
-
+  .sponsor {
+    width: 90%;
+    margin-left: 15px;
+  }
 }
