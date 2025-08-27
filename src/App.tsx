@@ -11,6 +11,7 @@ import Players from './components/Players';
 const router = createBrowserRouter([
   {path: '/', element: <Home />},
   {path: '/contact', element: <Contact />},
+  {path: '/players', element: <Players />},
   {path: '/about', element: <About />},
   {path: '/players', element: <Players />},
   {path: '/sponsors', element: <Sponsors />},

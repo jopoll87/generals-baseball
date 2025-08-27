@@ -5,6 +5,7 @@ import SR from '../assets/sponsors/SimplyRight.webp'
 import Alpine from '../assets/sponsors/Alpine.png'
 import ATI from '../assets/sponsors/ATI_Logo.png'
 
+
 export type SponsorType = {
   id: number,
   name: string,
