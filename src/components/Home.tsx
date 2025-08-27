@@ -1,5 +1,6 @@
 // import StarsShield from '../assets/Logos/GeneralsShieldStars.png';
 import Team from '../assets/Logos/TeamBannerPhoto.png';
+import GameChanger from './GameChanger';
 import Header from './Header';
 import GameChanger from './GameChanger';
 
