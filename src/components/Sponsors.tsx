@@ -8,7 +8,7 @@ const Sponsors = () => {
     <>
         <Header />
         <h2 className='body'>Thank you to our Sponsors</h2>
-        <ul>
+        <ul className='sponsors-list'>
           {SPONSORS.map((sponsor: SponsorType) => (
             <Sponsor 
               key={sponsor.id}

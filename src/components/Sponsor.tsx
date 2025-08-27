@@ -4,7 +4,9 @@ const Sponsor = (props: SponsorType) => {
   return (
     <li>
       <div className='sponsor'>
-        <img src={props.image} alt={props.name}/>
+        <div className='sponsor-image-container'>
+          <img src={props.image} alt={props.name}/>
+        </div>
         <h2>{props.name}</h2>
       </div>
     </li>
