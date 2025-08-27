@@ -2,7 +2,6 @@
 import Team from '../assets/Logos/TeamBannerPhoto.png';
 import GameChanger from './GameChanger';
 import Header from './Header';
-import GameChanger from './GameChanger';
 
 const Body = () => {
   return (
