@@ -13,8 +13,8 @@ body {
   height: auto;
 }
 
-#team-photo {
-  max-width: 75%;
+.team-photo {
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   border: 2px solid #333;
@@ -413,5 +413,9 @@ li {
   .sponsor {
     width: 90%;
     margin-left: 15px;
+  }
+
+  .team-photo {
+    width: 75%;
   }
 }

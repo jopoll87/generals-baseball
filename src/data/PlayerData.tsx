@@ -4,7 +4,6 @@ import Easton from '../assets/players/EastonPoster.jpg'
 import Bron from '../assets/players/BronPoster.jpg'
 import Carter from '../assets/players/CarterPoster.jpg'
 import Connor from '../assets/players/ConnorPoster.jpg'
-import Ethan from '../assets/players/EthanPoster.jpg'
 import Holden from '../assets/players/HoldenPoster.jpg'
 import Jaxson from '../assets/players/JaxsonPoster.jpg'
 import Kelton from '../assets/players/KeltonPoster.jpg'
@@ -48,13 +47,6 @@ export const PLAYERS =[
     playerNumber: 11,
     image: Easton,
     positions: ['Catcher', 'Outfield']
-  },
-  {
-    id: 7,
-    name: 'Ethan',
-    playerNumber: 13,
-    image: Ethan,
-    positions: ['Pitcher', 'Outfield', 'Infield']
   },
   {
     id: 2,
